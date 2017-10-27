@@ -1,0 +1,19 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "sourceMap": true,
+    "outDir": "../",
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "../node_modules",
+    "../"
+  ],
+  "files": [
+    "scrape.ts"
+  ]
+}
