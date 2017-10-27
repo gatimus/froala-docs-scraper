@@ -1,5 +1,8 @@
 import * as cheerio from 'cheerio';
 import * as https from 'https';
+import { readFile, writeFile } from 'fs';
+import { promisify } from 'util';
+import * as Mustache from 'mustache';
 
 function httpGet(options: https.RequestOptions | string | URL): Promise<string> {
     return new Promise<string>((resolve, reject) => {
@@ -16,6 +19,10 @@ function httpGet(options: https.RequestOptions | string | URL): Promise<string> 
         });
     });
 }
+
+const readFilePromise = promisify(readFile);
+
+const writeFilePromise = promisify(writeFile);
 
 function mapType(docType: string) {
     if (docType === 'Object') {
