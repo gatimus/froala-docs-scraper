@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc --project src",
-    "start": "npm run build && node scrape.js"
+    "start:options": "npm run build && node scrape-options.js",
+    "start:methods": "npm run build && node scrape-methods.js"
   },
   "author": "",
   "license": "UNLICENSED",

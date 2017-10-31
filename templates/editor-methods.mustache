@@ -1,0 +1,10 @@
+{{=<% %>=}}
+// tslint:disable
+interface JQuery {
+    <%#methods%>
+    /**
+     * <%description%>
+     */
+    froalaEditor(editorMethod: "<%&name%>"<%&params%>): <%&type%>;
+    <%/methods%>
+}

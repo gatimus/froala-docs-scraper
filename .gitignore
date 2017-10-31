@@ -60,3 +60,5 @@ typings/
 # Typescript project
 *.js
 *.js.map
+
+out/

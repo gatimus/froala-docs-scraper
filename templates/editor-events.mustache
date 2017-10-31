@@ -1,0 +1,11 @@
+{{=<% %>=}}
+// tslint:disable
+interface JQuery {
+    <%#events%>
+    /**
+     * <%description%>
+     */
+    on(event: "<%&name%>", fn: () => void): JQuery;
+    off(event: "<%&name%>"): JQuery;
+    <%/events%>
+}
